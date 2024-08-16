@@ -1,0 +1,85 @@
+.homeContainer {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Ensure relative positioning for the absolute overlay */
+  padding: 20px;
+}
+
+.backgroundImage {
+  background-image: url("../../assets/homepagepic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keep the background fixed in place */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(25%); /* Adjust brightness to make it duller */
+}
+
+.homeButton {
+  background-color: transparent;
+  color: white;
+  border-radius: 25px;
+  height: 44px;
+  width: 170px;
+  border: 2.5px solid white;
+  font-weight: 550;
+  margin-top: 30px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+.textContainer {
+  z-index: 1; /* Ensure the text is above the background */
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .textContainer h1 {
+    font-size: 35px; /* Smaller font size for smaller screens */
+  }
+
+  .textContainer p {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    margin-top: -20px; /* Adjust margin for smaller screens */
+  }
+
+  .homeButton {
+    height: 40px;
+    width: 150px;
+    font-size: 13px; /* Adjust button size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .textContainer h1 {
+    font-size: 28px; /* Even smaller font size for very small screens */
+  }
+
+  .textContainer p {
+    font-size: 12px; /* Smaller font size for very small screens */
+    margin-top: -15px; /* Adjust margin for very small screens */
+  }
+
+  .homeButton {
+    height: 36px;
+    width: 130px;
+    font-size: 12px; /* Adjust button size for very small screens */
+  }
+  
+}

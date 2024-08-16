@@ -1,0 +1,119 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  color: white;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.backgroundImage {
+  background-image: url("../../assets/contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it is behind the text */
+  background-attachment: fixed;
+  filter: brightness(25%);
+}
+
+.leftSection, .rightSection {
+  z-index: 1; /* Ensure the sections are above the overlay */
+}
+
+.cardSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Decreased gap between cards */
+  width: 100%;
+  max-width: 600px; /* Set a max-width */
+  margin-bottom: 10px; /* Decreased gap between card section and form */
+  animation: slideInFromLeft 2s ease-out;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 900px; /* Increased max-width */
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 100%;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.rightSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: slideInFromBottom 2s ease-out;
+}
+
+.mapWrapper {
+  height: 200px; /* Adjust the height as needed */
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; 
+    align-items: flex-start; /* Align items to top to avoid large gap */
+  }
+
+  .leftSection, .rightSection {
+    width: 48%;
+    max-width: 800px; /* Set a max-width to prevent sections from expanding too much */
+  }
+
+  .formRow {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leftSection, .rightSection {
+    flex-direction: column;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

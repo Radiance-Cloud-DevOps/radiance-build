@@ -1,0 +1,28 @@
+.iconAlignmentStyles {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Ensure the icon and text are vertically aligned */
+    justify-content: flex-start; /* Ensure the content starts from the same edge */
+    width: 100%;
+  }
+  
+  .iconStyles {
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .iconAlignmentStyles {
+      flex-direction: row; /* Keep row layout for smaller screens */
+      justify-content: flex-start;
+    }
+  
+    .iconStyles {
+      width: 20px;
+      height: 20px;
+      padding-right: 8px;
+    }
+  }
+  
