@@ -23,7 +23,7 @@ function Navigation() {
         <div className={`${styles.navbar} ${isOpen ? styles.open : ''}`}>
             <div className={styles.navbarInnerContainer}>
                 {/* <img className={styles.logo} src={Logo}/> */}
-                <h2 className={styles.logo}>CLOUD SWIFT</h2>
+                <h2 className={styles.logo}>KLOUD SWIFT</h2>
                 <button className={styles.menuButton} onClick={toggleMenu}>
                     <img src={menu} alt="menuBar"/>   
                 </button>
