@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import styles from './navigation.module.css'; // Import your CSS module for styling
 import menu from '../../assets/list.svg';
 import Button from '../../components/Button/Button';
-//import Logo from "../../assets/radianceLogo.png";
+import Logo from "../../assets/logoMain.png";
 
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +22,10 @@ function Navigation() {
     return (
         <div className={`${styles.navbar} ${isOpen ? styles.open : ''}`}>
             <div className={styles.navbarInnerContainer}>
-                {/* <img className={styles.logo} src={Logo}/> */}
-                <h2 className={styles.logo}>KLOUD SWIFT</h2>
+            <div className={styles.logoContainer}>
+                <img className={styles.logo} src={Logo} alt="logo"/>
+                <h2 className={styles.logoText}>KLOUD SWIFT</h2>
+            </div>
                 <button className={styles.menuButton} onClick={toggleMenu}>
                     <img src={menu} alt="menuBar"/>   
                 </button>
