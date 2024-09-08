@@ -68,7 +68,7 @@ const ContactUs = () => {
             textColor={"black"}
             cardHeight={"90px"}
             cardColor={"lightgrey"}
-            text2={"Skymark Avenue, Mississauga"}
+            text2={"38 Dunrobin crescent ,Kleinburg, Ontario, L4H 4A9"}
             text2Size={"0.8rem"}
           />
           <Card
@@ -78,7 +78,7 @@ const ContactUs = () => {
             textColor={"black"}
             cardHeight={"90px"}
             cardColor={"lightgrey"}
-            text2={"radiance.cd@gmail.com"}
+            text2={"ashi.sunnam@gmail.com"}
             text2Size={"0.8rem"}
           />
           <Card

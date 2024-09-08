@@ -50,10 +50,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .textContainer h1 {
-    font-size: 35px; /* Smaller font size for smaller screens */
-  }
-
   .textContainer p {
     font-size: 14px; /* Smaller font size for smaller screens */
     margin-top: -20px; /* Adjust margin for smaller screens */
@@ -67,9 +63,6 @@
 }
 
 @media (max-width: 480px) {
-  .textContainer h1 {
-    font-size: 28px; /* Even smaller font size for very small screens */
-  }
 
   .textContainer p {
     font-size: 12px; /* Smaller font size for very small screens */
