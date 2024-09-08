@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import styles from './navigation.module.css'; // Import your CSS module for styling
 import menu from '../../assets/list.svg';
 import Button from '../../components/Button/Button';
-import Logo from "../../assets/logoMain.png";
+import Logo from "../../assets/cloudopolislogo.png";
 
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ function Navigation() {
             <div className={styles.navbarInnerContainer}>
             <div className={styles.logoContainer}>
                 <img className={styles.logo} src={Logo} alt="logo"/>
-                <h2 className={styles.logoText}>KLOUD SWIFT</h2>
+               
             </div>
                 <button className={styles.menuButton} onClick={toggleMenu}>
                     <img src={menu} alt="menuBar"/>   

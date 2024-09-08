@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [   
     {
-      "src": "logoMain.png",
+      "src": "cloudopolislogo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
