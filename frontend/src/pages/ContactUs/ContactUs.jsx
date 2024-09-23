@@ -32,7 +32,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://3.144.190.190:5000/api/users', formData);
+      const response = await axios.post('https://cloudopolis.ca/api/users', formData);
       console.log(response.data);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setAlert({ message: 'Message Sent Successfully!', type: 'success' });
@@ -88,7 +88,7 @@ const ContactUs = () => {
             textColor={"black"}
             cardHeight={"90px"}
             cardColor={"lightgrey"}
-            text2={"+16476860657"}
+            text2={"+16474445571"}
             text2Size={"0.8rem"}
           />
         </div>
