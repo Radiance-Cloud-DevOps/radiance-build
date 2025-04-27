@@ -78,7 +78,7 @@ const ContactUs = () => {
             textColor={"black"}
             cardHeight={"90px"}
             cardColor={"lightgrey"}
-            text2={"ashi.sunnam@gmail.com"}
+            text2={"contactus@cloudopolis.ca"}
             text2Size={"0.8rem"}
           />
           <Card
